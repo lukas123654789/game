@@ -14,7 +14,7 @@ monster5 = SorbyBarber()
 
 player1 = Player(player_name)
 monsters = [monster1, monster2, monster3, monster4]
-enemy = monsters[random.randint(0,3)]
+enemy = random.choice(monsters)
 gane_on = True
 while gane_on:
     break

@@ -1,4 +1,5 @@
-class Player:
+
+class Player():
     def __init__(self, player_name):
         self.name = player_name
         self.level = 1
@@ -10,11 +11,11 @@ class Player:
         self.hp += 75
         self.damage += 10
 
-    def attack(self):
-        pass
-        
-    def ultimate_attack(self):
-        pass
+    def attack(self, health):
+        return health - self.damage
+             
+    def ultimate_attack(self, health):
+        return health - self.damage * 2
 
     def run_away(self):
-        pass
+        return True
